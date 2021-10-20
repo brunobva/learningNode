@@ -1,0 +1,12 @@
+// requesting the use of http module
+const http = require('http')
+
+// Request and reponse from Server
+const server = http.createServer((req, res)=> {
+    res.end('<h1>Your First simple webserver<h1>')
+});
+
+// Server is the variable and list define the port that will communicate with our webserver
+server.listen(3000, ()=> {
+    console.log('Server started and running on port 3000.')
+});
